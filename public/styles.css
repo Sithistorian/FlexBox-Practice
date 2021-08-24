@@ -8,6 +8,18 @@ html {
   font-size: 100%;
 }
 
+ul {
+  background-color: azure;
+  list-style-type: none;
+  width: 600px;
+  display: inline-flex;
+}
+
+li {
+  color: violet;
+  padding: 5px;
+}
+
 body {
   background-color: rgb(48, 44, 51);
   color: whitesmoke;
