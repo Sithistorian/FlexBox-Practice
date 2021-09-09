@@ -38,3 +38,11 @@ body {
   display: inline-flex;
   flex-direction: row-reverse;
 }
+
+#flexColumn {
+  background-color: rgb(180, 208, 208);
+  list-style-type: none;
+  width: 50vw;
+  display: inline-flex;
+  flex-direction: column;
+}
