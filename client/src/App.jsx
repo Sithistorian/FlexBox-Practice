@@ -7,17 +7,29 @@ class App extends React.Component {
     this.state = {
       listName: 'flexRow'
     }
+
+    this.changeID = this.changeID.bind(this);
+  }
+
+  changeID (e) {
+    e.preventDefault();
+    this.setState( {
+      listName: e.nativeEvent.submitter.name
+    })
+    console.log(e.nativeEvent)
   }
 
 
   render () {
     return (
-      <ul Id={this.state.listName}>
-      <li>Item 1</li>
-      <li>Item 2</li>
-      <li>Item 3</li>
-      <li>Item 4</li>
+      <form name={this.state.listName} onSubmit = {this.changeID}>
+      <ul id={this.state.listName}>
+      <li><button type="Submit" name="flexRow">1: Row</button></li>
+      <li><button type="Submit" name="flexReverseRow">2: Reverse Row</button></li>
+      <li><button type="Submit" name="flexColumn">3: Column</button></li>
+      <li><button type="Submit" name="flexReverseColumn">4: Reverse Column</button></li>
     </ul>
+    </form>
     )
   }
 
