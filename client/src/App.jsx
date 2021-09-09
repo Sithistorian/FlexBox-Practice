@@ -16,7 +16,6 @@ class App extends React.Component {
     this.setState( {
       listName: e.nativeEvent.submitter.name
     })
-    console.log(e.nativeEvent)
   }
 
 
@@ -25,9 +24,9 @@ class App extends React.Component {
       <form name={this.state.listName} onSubmit = {this.changeID}>
       <ul id={this.state.listName}>
       <li><button type="Submit" name="flexRow">1: Row</button></li>
-      <li><button type="Submit" name="flexReverseRow">2: Reverse Row</button></li>
+      <li><button type="Submit" name="flexRowReverse">2: Reverse Row</button></li>
       <li><button type="Submit" name="flexColumn">3: Column</button></li>
-      <li><button type="Submit" name="flexReverseColumn">4: Reverse Column</button></li>
+      <li><button type="Submit" name="flexColumnReverse">4: Reverse Column</button></li>
     </ul>
     </form>
     )
