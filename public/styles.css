@@ -34,7 +34,7 @@ body {
 #flexRowReverse {
   background-color: rgb(180, 208, 208);
   list-style-type: none;
-  width: 50vw;
+  width: 80vw;
   display: inline-flex;
   flex-direction: row-reverse;
 }

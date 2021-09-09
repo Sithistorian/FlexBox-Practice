@@ -9,6 +9,7 @@ class App extends React.Component {
     }
 
     this.changeID = this.changeID.bind(this);
+    this.direction = this.direction.bind(this);
   }
 
   changeID (e) {
@@ -18,14 +19,33 @@ class App extends React.Component {
     })
   }
 
+  direction () {
+    let direction = this.state.listName;
+    if (direction === 'flexRow') {
+      return '>'
+    }
+    if (direction === 'flexRowReverse') {
+      return '<'
+    }
+    if (direction === 'flexColumn') {
+      return 'v'
+    }
+    if (direction === 'flexColumnReverse') {
+      return '^'
+    }
+  }
+
 
   render () {
     return (
       <form name={this.state.listName} onSubmit = {this.changeID}>
       <ul id={this.state.listName}>
       <li><button type="Submit" name="flexRow">1: Row</button></li>
+      <li>{this.direction()}</li>
       <li><button type="Submit" name="flexRowReverse">2: Reverse Row</button></li>
+      <li>{this.direction()}</li>
       <li><button type="Submit" name="flexColumn">3: Column</button></li>
+      <li>{this.direction()}</li>
       <li><button type="Submit" name="flexColumnReverse">4: Reverse Column</button></li>
     </ul>
     </form>
