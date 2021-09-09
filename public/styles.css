@@ -9,9 +9,14 @@ html {
 }
 
 li {
-  color: violet;
+  color: blueviolet;
   padding: 5px;
   width: 400px;
+}
+
+button {
+  color: whitesmoke;
+  background-color: rgb(48, 44, 51);
 }
 
 body {
@@ -19,12 +24,20 @@ body {
   color: whitesmoke;
 }
 
+/* Flex-direction Form */
+
+#directionForm {
+  width: 100%;
+  border: 3px solid blueviolet;
+  padding: 10px;
+}
+
 /* Flex-direction Row */
 
 #flexRow {
   background-color: rgb(180, 208, 208);
   list-style-type: none;
-  width: 50vw;
+  width: 80vw;
   display: inline-flex;
   flex-direction: row;
 }
@@ -39,18 +52,23 @@ body {
   flex-direction: row-reverse;
 }
 
+/* Flex-direction Column */
+
 #flexColumn {
   background-color: rgb(180, 208, 208);
   list-style-type: none;
-  width: 50vw;
+  width: 80vw;
   display: inline-flex;
   flex-direction: column;
 }
 
+/* Flex-direction Column-Reverse */
+
 #flexColumnReverse {
+  margin: auto;
   background-color: rgb(180, 208, 208);
   list-style-type: none;
-  width: 50vw;
+  width: 80vw;
   display: inline-flex;
   flex-direction: column-reverse;
 }

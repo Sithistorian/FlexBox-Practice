@@ -1,4 +1,5 @@
 import React from 'react';
+import DirectionForm from './DirectionForm';
 
 class App extends React.Component {
 
@@ -38,17 +39,7 @@ class App extends React.Component {
 
   render () {
     return (
-      <form name={this.state.listName} onSubmit = {this.changeID}>
-      <ul id={this.state.listName}>
-      <li><button type="Submit" name="flexRow">1: Row</button></li>
-      <li>{this.direction()}</li>
-      <li><button type="Submit" name="flexRowReverse">2: Reverse Row</button></li>
-      <li>{this.direction()}</li>
-      <li><button type="Submit" name="flexColumn">3: Column</button></li>
-      <li>{this.direction()}</li>
-      <li><button type="Submit" name="flexColumnReverse">4: Reverse Column</button></li>
-    </ul>
-    </form>
+      <DirectionForm changeId={this.changeID} listName={this.state.listName} direction={this.direction}/>
     )
   }
 
