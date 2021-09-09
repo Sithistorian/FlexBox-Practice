@@ -8,13 +8,6 @@ html {
   font-size: 100%;
 }
 
-ul {
-  background-color: azure;
-  list-style-type: none;
-  width: 600px;
-  display: inline-flex;
-}
-
 li {
   color: violet;
   padding: 5px;
@@ -23,4 +16,24 @@ li {
 body {
   background-color: rgb(48, 44, 51);
   color: whitesmoke;
+}
+
+/* Flex-direction Row */
+
+#flexRow {
+  background-color: rgb(180, 208, 208);
+  list-style-type: none;
+  width: 50vw;
+  display: inline-flex;
+  flex-direction: row;
+}
+
+/* Flex-direction Row-Reverse */
+
+#flexRow {
+  background-color: rgb(180, 208, 208);
+  list-style-type: none;
+  width: 50vw;
+  display: inline-flex;
+  flex-direction: row-reverse;
 }
