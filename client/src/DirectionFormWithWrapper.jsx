@@ -15,7 +15,7 @@ const DirectionFormWithWrapper = function ({changeId, listName, direction, eleme
       <li><button type="Submit" name="flexColumnWrap">3: Column Wrap</button></li>
       <li>{direction()}</li>
       <li><button type="Submit" name="flexColumnReverseWrap">4: Reverse Column Wrap</button></li>
-    <AddElement elementCount={elementCount} direction={direction}/>
+    <AddElement elementCount={elementCount} direction={direction} listName={listName}/>
     </ul>
     </form>
     </React.Fragment>
