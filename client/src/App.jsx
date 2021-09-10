@@ -9,7 +9,7 @@ class App extends React.Component {
     this.state = {
       listName: 'flexRow',
       listNameWrap: 'flexRowWrap',
-      elementCount: 4
+      elementCount: 1
     }
     this.incrementCount = this.props.services.handlers.incrementCount.bind(this);
     this.changeID = this.props.services.handlers.changeID.bind(this);
