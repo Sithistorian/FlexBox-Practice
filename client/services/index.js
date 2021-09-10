@@ -1,2 +1,2 @@
-exports.example = require('./services');
+exports.handlers = require('./handlers');
 

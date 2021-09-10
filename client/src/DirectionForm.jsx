@@ -5,7 +5,7 @@ const DirectionForm = function ({changeId, listName, direction}) {
 
     return (
       <React.Fragment>
-      <form id="directionForm" name={listName} onSubmit = {changeId}>
+      <form id="directionForm" name="directionForm" onSubmit = {changeId}>
       <ul id={listName}>
       <li><button type="Submit" name="flexRow">1: Row</button></li>
       <li>{direction()}</li>

@@ -11,7 +11,7 @@ html {
 li {
   color: blueviolet;
   padding: 5px;
-  width: 400px;
+  width: 100px;
 }
 
 button {
@@ -90,4 +90,46 @@ body {
   width: 80vw;
   display: inline-flex;
   flex-direction: column-reverse;
+}
+
+/* Flex-wrap*/
+
+/* Flex-wrap Row */
+
+#flexRowWrap {
+  list-style-type: none;
+  width: 80vw;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* Flex-wrap Row-Reverse */
+
+#flexRowReverseWrap {
+  list-style-type: none;
+  width: 80vw;
+  display: inline-flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
+
+/* Flex-wrap Column */
+
+#flexColumnWrap {
+  list-style-type: none;
+  width: 80vw;
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+/* Flex-direction Column-Reverse */
+
+#flexColumnReverseWrap {
+  list-style-type: none;
+  width: 80vw;
+  display: inline-flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
 }

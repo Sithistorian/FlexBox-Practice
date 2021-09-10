@@ -8,18 +8,11 @@ class App extends React.Component {
     super(props);
     this.state = {
       listName: 'flexRow',
+      listNameWrap: 'flexRowWrap',
       elementCount: 0
     }
-
-    this.changeID = this.changeID.bind(this);
+    this.changeID = this.props.services.handlers.changeID.bind(this);
     this.direction = this.direction.bind(this);
-  }
-
-  changeID (e) {
-    e.preventDefault();
-    this.setState( {
-      listName: e.nativeEvent.submitter.name
-    })
   }
 
   direction () {
@@ -45,7 +38,7 @@ class App extends React.Component {
       <DirectionForm changeId={this.changeID} listName={this.state.listName} direction={this.direction}/>
       <section>
         <h1>This section displays the flex-direction with wrapper</h1>
-        <DirectionFormWithWrapper changeId={this.changeID} listName={this.state.listName} direction={this.direction} elementCount={this.state.elementCount}/>
+        <DirectionFormWithWrapper changeId={this.changeID} listName={this.state.listNameWrap} direction={this.direction} elementCount={this.state.elementCount}/>
       </section>
       </React.Fragment>
     )
