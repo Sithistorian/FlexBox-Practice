@@ -36,7 +36,7 @@ class App extends React.Component {
   render () {
     return (
       <React.Fragment>
-      <DirectionForm changeId={this.changeID} listName={this.state.listName} direction={this.direction}/>
+      <DirectionForm changeId={this.changeID} listName={this.state.listName} direction={this.direction} elementCount={this.state.elementCount} incrementCount={this.incrementCount}/>
       <section>
         <h1>This section displays the flex-direction with wrapper</h1>
         <DirectionFormWithWrapper changeId={this.changeID} listName={this.state.listNameWrap} direction={this.direction} elementCount={this.state.elementCount} incrementCount={this.incrementCount}/>

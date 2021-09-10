@@ -119,6 +119,7 @@ body {
 #flexColumnWrap {
   list-style-type: none;
   width: 80vw;
+  height: 400px;
   display: inline-flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -129,6 +130,7 @@ body {
 #flexColumnReverseWrap {
   list-style-type: none;
   width: 80vw;
+  height: 400px;
   display: inline-flex;
   flex-direction: column-reverse;
   flex-wrap: wrap;
