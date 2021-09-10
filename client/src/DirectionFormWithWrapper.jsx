@@ -1,7 +1,7 @@
 import React from 'react';
 import AddElement from './AddElement';
 
-const DirectionFormWithWrapper = function ({changeId, listName, direction, elementCount}) {
+const DirectionFormWithWrapper = function ({changeId, listName, direction, elementCount, incrementCount}) {
 
 
     return (
@@ -15,7 +15,7 @@ const DirectionFormWithWrapper = function ({changeId, listName, direction, eleme
       <li><button type="Submit" name="flexColumnWrap">3: Column Wrap</button></li>
       <li>{direction()}</li>
       <li><button type="Submit" name="flexColumnReverseWrap">4: Reverse Column Wrap</button></li>
-    <AddElement elementCount={elementCount} direction={direction} listName={listName}/>
+    <AddElement elementCount={elementCount} direction={direction} listName={listName} incrementCount= {incrementCount}/>
     </ul>
     </form>
     </React.Fragment>

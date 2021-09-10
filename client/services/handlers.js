@@ -13,6 +13,14 @@ const changeID = function (e) {
   }
 }
 
+const incrementCount = function () {
+  let tally = this.state.elementCount + 1;
+  this.setState({
+    elementCount: tally
+  })
+}
+
 module.exports = {
-  changeID
+  changeID,
+  incrementCount
 }

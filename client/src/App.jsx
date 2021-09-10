@@ -9,8 +9,9 @@ class App extends React.Component {
     this.state = {
       listName: 'flexRow',
       listNameWrap: 'flexRowWrap',
-      elementCount: 0
+      elementCount: 4
     }
+    this.incrementCount = this.props.services.handlers.incrementCount.bind(this);
     this.changeID = this.props.services.handlers.changeID.bind(this);
     this.direction = this.direction.bind(this);
   }
@@ -38,7 +39,7 @@ class App extends React.Component {
       <DirectionForm changeId={this.changeID} listName={this.state.listName} direction={this.direction}/>
       <section>
         <h1>This section displays the flex-direction with wrapper</h1>
-        <DirectionFormWithWrapper changeId={this.changeID} listName={this.state.listNameWrap} direction={this.direction} elementCount={this.state.elementCount}/>
+        <DirectionFormWithWrapper changeId={this.changeID} listName={this.state.listNameWrap} direction={this.direction} elementCount={this.state.elementCount} incrementCount={this.incrementCount}/>
       </section>
       </React.Fragment>
     )
