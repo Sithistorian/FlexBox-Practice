@@ -15,12 +15,34 @@ li {
 }
 
 button {
-  color: whitesmoke;
-  background-color: rgb(48, 44, 51);
+  height: 100px;
+  width: 100px;
+  border-radius: 15%;
+  color: rgb(43, 34, 34);
+  background-color: rgb(252, 244, 231);
+  border-right: 0;
+  border-left: 0;
+  border-top: 0;
+  border-bottom: 3px solid rgb(247, 245, 236);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  transition: all 2s ease-out;
+}
+
+button:hover {
+  height: 100px;
+  width: 100px;
+  border-right: 0;
+  border-left: 0;
+  border-top: 0;
+  color: rgb(43, 34, 34);
+  background-color: rgb(252, 244, 231);
+  border-bottom: 3px solid rgb(193, 184, 160);
+  box-shadow: rgb(38, 57, 77) 0px 10px 15px -5px;
+  cursor: pointer;
 }
 
 body {
-  background-color: rgb(48, 44, 51);
+  background-color: rgb(209, 222, 242);
   color: whitesmoke;
 }
 
@@ -28,14 +50,15 @@ body {
 
 #directionForm {
   width: 100%;
-  border: 3px solid blueviolet;
+  background-color: rgb(247, 245, 236);
+  border: none;
   padding: 10px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 /* Flex-direction Row */
 
 #flexRow {
-  background-color: rgb(180, 208, 208);
   list-style-type: none;
   width: 80vw;
   display: inline-flex;
@@ -45,7 +68,6 @@ body {
 /* Flex-direction Row-Reverse */
 
 #flexRowReverse {
-  background-color: rgb(180, 208, 208);
   list-style-type: none;
   width: 80vw;
   display: inline-flex;
@@ -55,7 +77,6 @@ body {
 /* Flex-direction Column */
 
 #flexColumn {
-  background-color: rgb(180, 208, 208);
   list-style-type: none;
   width: 80vw;
   display: inline-flex;
@@ -65,8 +86,6 @@ body {
 /* Flex-direction Column-Reverse */
 
 #flexColumnReverse {
-  margin: auto;
-  background-color: rgb(180, 208, 208);
   list-style-type: none;
   width: 80vw;
   display: inline-flex;
